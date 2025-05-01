@@ -1,0 +1,1 @@
+{"version":3,"file":"hello-world/index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://jpjuliao-gb-blocks/./src/hello-world/editor.scss"],"sourcesContent":[".wp-block-jpjuliao-gb-blocks-jpjuliao-gb-blocks {\n\tborder: 1px dotted #f00;\n}\n"],"names":[],"sourceRoot":""}
