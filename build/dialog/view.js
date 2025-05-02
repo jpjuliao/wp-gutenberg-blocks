@@ -3639,9 +3639,9 @@ module.exports = window["ReactJSXRuntime"];
 var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
-/*!****************************!*\
-  !*** ./src/dialog/view.js ***!
-  \****************************/
+/*!*****************************!*\
+  !*** ./src/dialog/view.tsx ***!
+  \*****************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);

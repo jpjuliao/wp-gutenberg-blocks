@@ -17,7 +17,10 @@
 		"test:unit": "wp-scripts test-unit-js"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.15.0"
+		"@types/react": "^18.3.20",
+		"@types/wordpress__blocks": "^12.5.17",
+		"@wordpress/scripts": "^30.15.0",
+		"typescript": "^5.8.3"
 	},
 	"dependencies": {
 		"@radix-ui/react-dialog": "^1.1.11"

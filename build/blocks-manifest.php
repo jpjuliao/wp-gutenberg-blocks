@@ -22,7 +22,25 @@ return array(
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'attributes' => array(
+			'content' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'title' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'isOpen' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
+			'buttonText' => array(
+				'type' => 'string',
+				'default' => 'OK'
+			)
+		)
 	),
 	'hello-world' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',

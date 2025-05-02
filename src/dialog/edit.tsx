@@ -8,7 +8,7 @@ const Edit = () => {
 		<div {...blockProps}>
 			{/* Static representation for the editor */}
 			<button className="dialog-trigger" disabled>Open Dialog (Preview)</button>
-			<p style={{ marginTop: '8px', fontStyle: 'italic', opacity: 0.7 }}>{ __( 'Radix Dialog - Renders on front-end', 'jpjuliao-gutenberg-blocks' ) }</p>
+			<p style={{ marginTop: '10px', fontStyle: 'italic', opacity: 0.7 }}>{ __( 'Radix Dialog - Renders on front-end', 'jpjuliao-gutenberg-blocks' ) }</p>
 		</div>
 	);
 };

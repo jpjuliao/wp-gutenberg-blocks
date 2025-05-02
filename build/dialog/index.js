@@ -8,14 +8,14 @@
   \*******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"jpjuliao-gb-blocks/dialog","version":"0.1.0","title":"Dialog","category":"widgets","icon":"smiley","description":"A dialog block for WordPress.","keywords":["dialog","popup","modal"],"supports":{"html":false},"textdomain":"jpjuliao-gb-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"jpjuliao-gb-blocks/dialog","version":"0.1.0","title":"Dialog","category":"widgets","icon":"smiley","description":"A dialog block for WordPress.","keywords":["dialog","popup","modal"],"supports":{"html":false},"textdomain":"jpjuliao-gb-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","attributes":{"content":{"type":"string","default":""},"title":{"type":"string","default":""},"isOpen":{"type":"boolean","default":false},"buttonText":{"type":"string","default":"OK"}}}');
 
 /***/ }),
 
-/***/ "./src/dialog/edit.js":
-/*!****************************!*\
-  !*** ./src/dialog/edit.js ***!
-  \****************************/
+/***/ "./src/dialog/edit.tsx":
+/*!*****************************!*\
+  !*** ./src/dialog/edit.tsx ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -41,7 +41,7 @@ const Edit = () => {
       children: "Open Dialog (Preview)"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
       style: {
-        marginTop: '8px',
+        marginTop: '10px',
         fontStyle: 'italic',
         opacity: 0.7
       },
@@ -53,10 +53,10 @@ const Edit = () => {
 
 /***/ }),
 
-/***/ "./src/dialog/save.js":
-/*!****************************!*\
-  !*** ./src/dialog/save.js ***!
-  \****************************/
+/***/ "./src/dialog/save.tsx":
+/*!*****************************!*\
+  !*** ./src/dialog/save.tsx ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -85,16 +85,6 @@ const Save = () => {
 /***/ ((module) => {
 
 module.exports = window["wp"]["blockEditor"];
-
-/***/ }),
-
-/***/ "@wordpress/blocks":
-/*!********************************!*\
-  !*** external ["wp","blocks"] ***!
-  \********************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
@@ -190,23 +180,46 @@ var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
 /*!*****************************!*\
-  !*** ./src/dialog/index.js ***!
+  !*** ./src/dialog/index.ts ***!
   \*****************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
+Object(function webpackMissingModule() { var e = new Error("Cannot find module 'wordpress__blocks'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block.json */ "./src/dialog/block.json");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/dialog/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/dialog/save.js");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/dialog/edit.tsx");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/dialog/save.tsx");
 
 
 
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_1__.name, {
-  ..._block_json__WEBPACK_IMPORTED_MODULE_1__,
+const ATTRIBUTE_TYPES = {
+  STRING: 'string',
+  BOOLEAN: 'boolean'
+};
+const blockConfig = {
+  category: _block_json__WEBPACK_IMPORTED_MODULE_1__.category,
+  title: _block_json__WEBPACK_IMPORTED_MODULE_1__.title,
+  attributes: {
+    content: {
+      type: ATTRIBUTE_TYPES.STRING,
+      default: ''
+    },
+    title: {
+      type: ATTRIBUTE_TYPES.STRING,
+      default: ''
+    },
+    isOpen: {
+      type: ATTRIBUTE_TYPES.BOOLEAN,
+      default: false
+    },
+    buttonText: {
+      type: ATTRIBUTE_TYPES.STRING,
+      default: 'OK'
+    }
+  },
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
-});
+};
+Object(function webpackMissingModule() { var e = new Error("Cannot find module 'wordpress__blocks'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(_block_json__WEBPACK_IMPORTED_MODULE_1__.name, blockConfig);
 })();
 
 /******/ })()
