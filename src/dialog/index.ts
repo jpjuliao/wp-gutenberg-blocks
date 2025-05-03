@@ -1,4 +1,4 @@
-import { registerBlockType } from 'wordpress__blocks';
+import { registerBlockType } from '@wordpress/blocks';
 import metadata from './block.json';
 import Edit from './edit';
 import Save from './save';
