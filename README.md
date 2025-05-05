@@ -24,9 +24,8 @@ This plugin provides a collection of custom blocks for the WordPress Gutenberg e
   * `@radix-ui/react-icons`
 * **TailwindCSS:**
 * **CSS:**
-	* `postcss`
-	* `autoprefixer`
-
+  * `postcss`
+  * `autoprefixer`
 
 ## Blocks Included
 
