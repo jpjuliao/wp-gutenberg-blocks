@@ -19,10 +19,11 @@ return array(
 			'html' => false
 		),
 		'textdomain' => 'jpjuliao-gb-blocks',
+		'style' => 'file:./style-index.css',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js',
+		'viewStyle' => 'file:./view.css',
 		'attributes' => array(
 			'content' => array(
 				'type' => 'string',
