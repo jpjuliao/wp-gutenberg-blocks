@@ -16,11 +16,11 @@
 		"html": false
 	},
 	"textdomain": "jpjuliao-gb-blocks",
-	"style": "file:./style-index.css",
-	"editorScript": "file:./index.js",
-	"editorStyle": "file:./index.css",
-	"viewScript": "file:./view.js",
+	"editorScript": "file:./index.ts",
+	"editorStyle": "file:./style.css",
+	"viewScript": "file:./view.tsx",
 	"viewStyle": "file:./view.css",
+	"style": "file:./style.css",
 	"attributes": {
 		"content": {
 			"type": "string",

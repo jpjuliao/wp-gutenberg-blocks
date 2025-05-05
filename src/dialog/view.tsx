@@ -27,38 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 							<Dialog.Description className="mb-5 mt-2.5 text-[15px] leading-normal text-mauve11">
 								Make changes to your profile here. Click save when you're done.
 							</Dialog.Description>
-							<fieldset className="mb-[15px] flex items-center gap-5">
-								<label
-									className="w-[90px] text-right text-[15px] text-violet11"
-									htmlFor="name"
-								>
-									Name
-								</label>
-								<input
-									className="inline-flex h-[35px] w-full flex-1 items-center justify-center rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
-									id="name"
-									defaultValue="Pedro Duarte"
-								/>
-							</fieldset>
-							<fieldset className="mb-[15px] flex items-center gap-5">
-								<label
-									className="w-[90px] text-right text-[15px] text-violet11"
-									htmlFor="username"
-								>
-									Username
-								</label>
-								<input
-									className="inline-flex h-[35px] w-full flex-1 items-center justify-center rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
-									id="username"
-									defaultValue="@peduarte"
-								/>
-							</fieldset>
-							<div className="mt-[25px] flex justify-end">
-								<Dialog.Close asChild>
-									<button className="inline-flex h-[35px] items-center justify-center rounded bg-green4 px-[15px] font-medium leading-none text-green11 outline-none outline-offset-1 hover:bg-green5 focus-visible:outline-2 focus-visible:outline-green6 select-none">
-										Save changes
-									</button>
-								</Dialog.Close>
+							<div className="py-2">
+								{/* Add dynamic content comming from the backend */}
 							</div>
 							<Dialog.Close asChild>
 								<button
