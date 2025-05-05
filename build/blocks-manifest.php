@@ -33,6 +33,10 @@ return array(
 				'type' => 'string',
 				'default' => ''
 			),
+			'description' => array(
+				'type' => 'string',
+				'default' => ''
+			),
 			'isOpen' => array(
 				'type' => 'boolean',
 				'default' => false

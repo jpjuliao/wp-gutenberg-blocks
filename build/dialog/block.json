@@ -30,6 +30,10 @@
       "type": "string",
       "default": ""
     },
+    "description": {
+      "type": "string",
+      "default": ""
+    },
     "isOpen": {
       "type": "boolean",
       "default": false
