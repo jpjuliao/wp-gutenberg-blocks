@@ -6,6 +6,17 @@ A WordPress plugin containing custom Gutenberg blocks built with React and TypeS
 
 This plugin provides a collection of custom blocks for the WordPress Gutenberg editor, enhancing content creation capabilities. Currently, it includes a dynamic Dialog block powered by Radix UI.
 
+## Blocks Included
+
+* **Dialog Block (`jpjuliao/dialog`)**
+  * Allows embedding a trigger button that opens a modal dialog.
+  * Content within the editor:
+    * Editable trigger button text.
+    * Editable dialog title (supports bold, italic).
+    * Editable dialog description (supports bold, italic, link).
+    * Editable main dialog content (supports bold, italic, link, list).
+  * Frontend rendering: Uses Radix UI's Dialog component for an accessible and interactive modal experience. The block saves a placeholder `div` with data attributes and uses a frontend script (`view.js`) to hydrate this placeholder into a fully functional React component.
+
 ## Technologies Used
 
 * **WordPress:**
@@ -26,17 +37,6 @@ This plugin provides a collection of custom blocks for the WordPress Gutenberg e
 * **CSS:**
   * `postcss`
   * `autoprefixer`
-
-## Blocks Included
-
-* **Dialog Block (`jpjuliao/dialog`)**
-  * Allows embedding a trigger button that opens a modal dialog.
-  * Content within the editor:
-    * Editable trigger button text.
-    * Editable dialog title (supports bold, italic).
-    * Editable dialog description (supports bold, italic, link).
-    * Editable main dialog content (supports bold, italic, link, list).
-  * Frontend rendering: Uses Radix UI's Dialog component for an accessible and interactive modal experience. The block saves a placeholder `div` with data attributes and uses a frontend script (`view.js`) to hydrate this placeholder into a fully functional React component.
 
 ## Installation
 
